@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cine</h1>
+        <p>Que edad tienes?</p>
+        <input type="number" id="edad" min="10" max="100">
+        <p>Que genero te gustaria ver?</p>
+        <button onclick="recomendar('accion')">Accion</button>
+        <button onclick="recomendar('ciencia')">Ciencia Ficcion</button>
+        <button onclick="recomendar('comedia')">Comedia</button>
+        <button onclick="recomendar('terror')">Terror</button>
+
+        <h3 id="mostrarPelicula">Tu pelicula</h3>
+
+    </div>
+
+    <script src="cine.js"></script>
+    
+</body>
+</html>

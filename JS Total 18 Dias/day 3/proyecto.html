@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Day 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="comenzarCuenta()">
+    <!-- JUEGO  -->
+    <div class="container">
+        <h2>Responde a las preguntas <span id="cuentaRregresiva">00:00</span></h2>
+        <p>1. Cual es tu nombre?</p>
+        <input type="text" placeholder="Name" id="respuesta1" />
+        <p>2. Cual es tu apellido?</p>
+        <input type="text" placeholder="LastName" id="respuesta2" />
+        <p>3. Cual es tu edad?</p>
+        <input type="text" placeholder="Name" id="respuesta3" />
+        <br>
+        <button onclick="finalizado()">Termine</button>
+        <br>
+        <button onclick="volverIntentar()">Otra vez</button>
+        <audio id="audioFinal"><source src="alarma.mp3" type="audio/mpeg"></audio>
+    </div>
+    <script src="funciones.js"></script>
+</body>
+</html>

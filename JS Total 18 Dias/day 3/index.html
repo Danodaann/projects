@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="comenzarReloj()">
+    <div class="container">
+        <div>
+            <h1>Titulo</h1>
+            <p>Ingresa tu nombre</p>
+            <input type="text" placeholder="Name" id="inputName">
+            <button onclick="saludar()">Saludar</button>
+            <h2 id="salida">No se tu nombre</h2>
+        </div>
+
+        <!-- Temporizador  -->
+        <div>
+            <input type="number" id="tiempoElegido">
+            <button onclick="comenzarTiempo()">Alarma </button>
+            <h2 id="textoAlarma" style="color: red;">APAGADO</h2>
+        </div>
+
+        <!-- Audio  -->
+        <div>
+            <audio id="audioAlarma" controls><source src="alarma.mp3" type="audio/mpeg" >
+                Sonido no habilitado</audio>
+        </div>
+
+         <!-- Fecha  -->
+        <div>         
+            <h2 id="textoReloj">00:00</h2>
+        </div>
+
+    </div>
+    <script src="js.js"></script>
+    
+</body>
+</html>

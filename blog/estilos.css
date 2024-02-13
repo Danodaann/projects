@@ -1,0 +1,135 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 3rem 2rem;
+    height: 90px;
+    border-radius: 1px;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container { /* Es una etiqueta de <section> con clase container */
+    width: 400px;
+    margin: 0 auto; /* Para que el contenido se CENTRE  */
+    margin-top: 4%;
+}
+
+/* NAV */
+.nav {
+
+    background-color: #333;
+    height: 40px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+        /* si hay un contenido que salga, no mostrarlo */
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 7%;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+li a:hover {
+    color: black;
+    background-color: #eee;
+    border-radius: 4px;
+    transform: scale(1.05, 1.05);
+    
+}
+
+.li-activo {
+    background-color: gray;
+    font-size: bold;
+    border-radius: 3px;
+}
+
+
+
+
+section article { /* Dentro de section los <article> */
+    transition: box-shadow 0.3s ease;  /*para indicarle que propiedades de css tienen que ser animadas se debe indicar el origen y mediante yn evento indicar el final*/
+                /* inicio tiempo algoritmo que va a acelerar y desacelerar la animacion */
+                /*para indicarle que propiedades de css tienen que ser animadas se debe indicar el origen y mediante yn evento indicar el final*/
+            /* si en lugar de box-shadow ponemos all va a animar todo lo que esta seleccionado */
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.7rem;
+    padding: 0.25rem 0; 
+        /* Vertical  Horizontal */
+    
+    cursor: pointer; 
+            /* para que se ponga la manita en vez del cursor */
+}
+
+/* Para hacer el efecto al pasar el mouse  */
+section article:hover {
+    transform: scale(1.01,1.01);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+            /* derecha abajo difuminado color  */
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #333;
+    padding: 3rem;
+    color:#fff;
+    border-radius: 4px;
+    height: 30px;
+
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.25s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
